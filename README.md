@@ -27,7 +27,9 @@ Creada con FLASK, MARIADB, HTML Y CSS
 5. Inicializar las variables de entorno.
 
 6. Inicializa la base de datos.
+
 ```flask init-db```
 
 7. Corre el servidor.
+
 ```flask run```
