@@ -6,7 +6,7 @@
 2. Muestra los correos que se han enviado en la app 
 3. Tiene un buscador, en el cual puedes buscar por el contenido del correo que se han enviado
 
-Creada con FLASK, MARIADB, HTML Y CSS
+Creada con FLASK, POSTGRESQL, HTML Y CSS
 
 ## Como usarla o configurla
 
@@ -18,13 +18,18 @@ Creada con FLASK, MARIADB, HTML Y CSS
 
 ```pip install -r requirements.txt```
 
-3. Inicializa la app.
+3. Debe tener Postgresql instalado.
 
-```export FLASK_APP=app```
+4. Crea un archivo .env y agrega las variables de entorno.
 
-4. Debe tener MariaDB instalado.
+    1. FLASK_DATABASE_HOST=tu_host_bd
+    2. FLASK_DATABASE_USER=tu_usuario_bd
+    3. FLASK_DATABASE_PASSWORD=tu_password_bd
+    4. FLASK_DATABASE=nombre_bd
+    5. PASSWORD_KEY=tu_key_email
 
-5. Inicializar las variables de entorno.
+5. Configurar tu correo y obtener la clave de acceso.
+    Para realizar este paso puedes seguir ver video https://youtu.be/DDVpKvJXRz8?si=PAa-kHrDnKU13UZ8
 
 6. Inicializa la base de datos.
 

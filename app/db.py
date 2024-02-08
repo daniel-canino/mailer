@@ -1,20 +1,19 @@
-from tkinter.messagebox import NO
 import click
 from flask import current_app, g
 from flask.cli import with_appcontext
 from .schema import instructions
-import mariadb
+import psycopg2
 
 def get_db():
     if 'db' not in g:
-        g.db = mariadb.connect(
+        g.db = psycopg2.connect(
             host = current_app.config['DATABASE_HOST'],
-            password = current_app.config['DATABASE_PASSWORD'],
             user = current_app.config['DATABASE_USER'],
+            password = current_app.config['DATABASE_PASSWORD'],
             database = current_app.config['DATABASE'],
         )
 
-    g.c = g.db.cursor(dictionary = True)
+    g.c = g.db.cursor()
 
     return g.db, g.c 
 

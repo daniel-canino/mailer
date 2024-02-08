@@ -61,7 +61,7 @@ import smtplib
 import os
 
 def send(to, subject, content):
-    sender_email = 'danielcanino111@gmail.com'
+    sender_email = 'caninodaniel92@gmail.com'
     password_email = os.environ.get('PASSWORD_KEY')
     
 
