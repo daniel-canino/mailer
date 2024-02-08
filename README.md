@@ -22,11 +22,11 @@ Creada con FLASK, POSTGRESQL, HTML Y CSS
 
 4. Crea un archivo .env y agrega las variables de entorno.
 
-    1. FLASK_DATABASE_HOST=tu_host_bd
-    2. FLASK_DATABASE_USER=tu_usuario_bd
-    3. FLASK_DATABASE_PASSWORD=tu_password_bd
-    4. FLASK_DATABASE=nombre_bd
-    5. PASSWORD_KEY=tu_key_email
+    - FLASK_DATABASE_HOST=tu_host_bd
+    - FLASK_DATABASE_USER=tu_usuario_bd
+    - FLASK_DATABASE_PASSWORD=tu_password_bd
+    - FLASK_DATABASE=nombre_bd
+    - PASSWORD_KEY=tu_key_email
 
 5. Configurar tu correo y obtener la clave de acceso.
     Para realizar este paso puedes seguir ver video https://youtu.be/DDVpKvJXRz8?si=PAa-kHrDnKU13UZ8
